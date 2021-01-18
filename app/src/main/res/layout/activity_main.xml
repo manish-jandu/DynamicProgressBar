@@ -29,6 +29,7 @@
             android:layout_weight="1"
             android:minHeight="50dp"
             android:max="10"
+            android:progress="0"
             />
         <TextView
             android:id="@+id/tv_progress"
@@ -40,6 +41,12 @@
             android:textColorHint="#7A8089"/>
     </LinearLayout>
 
+    <Button
+        android:id="@+id/btn_increase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Increase"/>
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -47,22 +54,34 @@
         android:orientation="horizontal"
         >
         <EditText
+            android:id="@+id/et_maximum"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="25dp"
-            android:hint="Minimum"
-            tools:text="Minimum"/>
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="25dp"
+            android:text="10"
             android:hint="Maximum"
             tools:text="Maximum"/>
         <EditText
+            android:id="@+id/et_weight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="25dp"
+            android:text="1"
             android:hint="Weight"
             tools:text="Weight"/>
     </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Submit"/>
+
+    <Button
+        android:id="@+id/btn_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Reset"/>
 </LinearLayout>
